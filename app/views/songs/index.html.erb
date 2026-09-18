@@ -1,0 +1,11 @@
+<h2>楽曲情報保存リスト</h2>
+<% @songs.each do |song| %>
+  <p>
+  <%= song.title %> / <%= song.artist %>
+  <%= link_to '削除', "/songs/#{song.id}", data: {turbo_method: :delete} %>
+  <%= link_to '表示', "/songs/#{song.id}" %>
+  <%= link_to '編集', "/songs/#{song.id}/edit" %>
+  </p>
+  <% end %>
+
+<p><%= link_to '新規追加', '/songs/new' %></p>

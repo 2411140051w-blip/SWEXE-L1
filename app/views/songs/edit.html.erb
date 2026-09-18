@@ -1,0 +1,15 @@
+<%= form_with model: @song do |f| %>
+  <p>
+  <%= f.label :title, 'タイトル' %>
+  <%= f.text_field :title %>
+  </p>
+  <p>
+  <%= f.label :artist, 'アーティスト' %>
+  <%= f.text_field :artist %>
+  </p>
+  <p>
+  <%= f.label :lyric, '歌詞' %>
+  <%= f.text_field :lyric %>
+  </p>
+  <%= f.submit '更新' %>
+<% end %>

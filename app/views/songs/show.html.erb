@@ -1,0 +1,16 @@
+<p>
+  <strong>タイトル：</strong>
+  <%= @song.title %>
+</p>
+
+<p>
+  <strong>アーティスト：</strong>
+  <%= @song.artist %>
+</p>
+
+<p>
+  <strong>歌詞：</strong>
+  <%= @song.lyric %>
+</p>
+
+<%= link_to 'Back', request.referer || '/' %>
